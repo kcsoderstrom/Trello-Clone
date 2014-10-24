@@ -1,0 +1,11 @@
+<%= model.escape("title") %>
+
+<ul class="lists">
+  <% if (model.attributes.lists) { %>
+    <% model.attributes.lists.forEach(function(list) { %>
+      <li><%= list.title %></li>
+    <% }); %>
+  <% } %>
+</ul>
+
+<button class="delete-board">Delete this board</button>
